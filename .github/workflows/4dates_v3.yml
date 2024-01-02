@@ -31,9 +31,9 @@ jobs:
 
     # Fourth Job
     fourth_print:
-        runs-on: debian
-        needs: third_print
+        runs-on: macos
+        needs: [first_print, second_print, third_print]
 
         steps:
-            - name: print current date on debian
+            - name: print current date on macos for a 2nd time
               run: echo "The current date is $(date)"
