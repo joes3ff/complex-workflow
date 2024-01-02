@@ -32,7 +32,7 @@ jobs:
     # Fourth Job
     fourth_print:
         runs-on: debian
-        need: third_print
+        needs: third_print
 
         steps:
             - name: print current date on debian
