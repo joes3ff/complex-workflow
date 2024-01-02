@@ -31,7 +31,7 @@ jobs:
 
     # Fourth Job
     fourth_print:
-        runs-on: macos
+        runs-on: macos-latest
         needs: [first_print, second_print, third_print]
 
         steps:
